@@ -1,0 +1,44 @@
+{
+    "name": "Group Attendance Bot",
+    "description": "Attendance checker bot from @ASavageSigma",
+    "logo": "https://telegra.ru.com/p/51bd4aefxc8859c7d6752a4eddd884df8516b12b044ab2e0b",
+    "keywords": [
+        "telegram",
+        "bot",
+        "modular",
+        "classroom",
+        "foss",
+        "productivity"
+    ],
+    "repository": "https://github.com/Stargirl-15/ALPHAFMOtelegram_group_attendance_bot",
+    "website": "https://telegram.dog/GroupAttendanceUpdates",
+    "success_url": "https://t.me/SpicyCrunch",
+    "env": {
+        "TG_BOT_TOKEN": {
+            "description": "Telegram Bot API key from @BotFather"
+        },
+        "USE_WEBHOOKS": {
+            "description": "set this to ANYTHING to enable WEBHOOK mode",
+            "value": "ANYTHING"
+        },
+        "WEBHOOK_URL": {
+            "description": "the value should be https://<app-name>.herokuapp.com/"
+        }
+    },
+    "addons": [{
+        "plan": "heroku-postgresql",
+        "options": {
+            "version": "12"
+        }
+    }],
+    "buildpacks": [{
+        "url": "heroku/python"
+    }],
+    "formation": {
+        "web": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
+
