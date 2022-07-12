@@ -1,1 +1,10 @@
+# virtual environment
+venv
+
+# bot configurations
+config.py
+
 __pycache__
+attendance_bot/__pycache__
+attendance_bot/modules/__pycache__
+
